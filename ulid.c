@@ -14,6 +14,8 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
 
 #define ULID_RNG_SKIP ((ulid_entropy_func_t) (-1))
 #define ULID_TIMESTAMP_BYTES  6
@@ -274,8 +276,8 @@ ulid_timestamp (const ulid_t* const ulid)
 
 
 #if defined(__linux__)
-# include <sys/random.h>
-# define URANDOM_USE_GETRANDOM 1
+# include <linux/random.h>
+//# define URANDOM_USE_GETRANDOM 1
 #elif defined(__OpenBSD__)
 # include <stdlib.h>
 # define URANDOM_USE_ARC4RANDOM 1
