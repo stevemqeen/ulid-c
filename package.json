@@ -1,7 +1,7 @@
 {
 	"name": "ulid-c",
 	"version": "0.1.2",
-	"repo": "aperezdc/ulid-c",
+	"repo": "BlooKe/ulid-c",
 	"description": "Universally Unique Lexically Sortable Identifier",
 	"license": "MIT",
 	"keywords": ["identifier", "unique", "sortable", "universal", "ulid"],
