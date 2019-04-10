@@ -11,7 +11,7 @@
 #include <inttypes.h>
 #include <stdbool.h>
 
-#ifdef __cpluspls
+#ifdef __cplusplus
 extern "C" {
 #endif
 
