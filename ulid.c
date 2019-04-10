@@ -173,6 +173,16 @@ ulid_encode  (ulid_t*             dst,
     }
 }
 
+extern void
+ulid_decode  (ulid_t*             dst,
+              const char* const src)
+{
+    api_check_return (dst != NULL);
+    api_check_return (src != NULL);
+
+    memcpy (dst->data, src, ULID_BYTES);
+}
+
 
 enum {
     BIT0 = 1 << 0,

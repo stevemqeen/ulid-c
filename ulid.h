@@ -57,6 +57,8 @@ extern void  ulid_encode  (ulid_t*             dst,
                            uint64_t            timestamp,
                            ulid_entropy_func_t rng,
                            void*               userdata);
+extern void  ulid_decode  (ulid_t*             dst,
+                           const char* const   src);
 
 extern uint64_t ulid_timestamp (const ulid_t* const ulid);
 
